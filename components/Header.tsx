@@ -44,13 +44,13 @@ const Header: React.FC<HeaderProps> = ({ profile, animes, onUpdateProfile, onNav
 
       <div className={`flex-1 max-w-xl mx-8 relative hidden md:block ${searchQuery ? 'search-active' : ''}`}>
         <ICONS.Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-zinc-500 z-10" />
+        {/* Removed invalid focusRingColor property from style below */}
         <input 
           type="text" 
           placeholder="Quick search..." 
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="w-full bg-zinc-900/80 border border-white/10 rounded-2xl py-3 pl-12 pr-4 focus:outline-none focus:ring-1 transition-all z-10"
-          style={{ focusRingColor: THEME_COLOR }}
         />
         
         {/* Floating Search Results */}
@@ -116,13 +116,13 @@ const Header: React.FC<HeaderProps> = ({ profile, animes, onUpdateProfile, onNav
 
               <div>
                 <label className="block text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-3 ml-1">Username</label>
+                {/* Removed invalid focusRingColor property from style below */}
                 <input 
                   type="text" 
                   value={tempUsername}
                   onChange={(e) => setTempUsername(e.target.value)}
                   placeholder="Enter name..."
                   className="w-full bg-zinc-800 border border-white/10 rounded-2xl px-5 py-4 focus:outline-none transition-all font-bold"
-                  style={{ focusRingColor: THEME_COLOR }}
                 />
               </div>
 

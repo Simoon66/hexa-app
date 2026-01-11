@@ -27,8 +27,9 @@ const AnimeSection: React.FC<AnimeSectionProps> = ({ title, animes, episodes, on
       <div className="flex gap-6 px-8 overflow-x-auto pb-10 snap-x no-scrollbar">
         {animes.map(anime => {
           const animeEps = episodes.filter(e => e.animeId === anime.id);
-          const subCount = animeEps.filter(e => e.links.sub).length;
-          const engCount = animeEps.filter(e => e.links.eng).length;
+          /* Updated counts to use existing properties in EpisodeLinks */
+          const subCount = animeEps.filter(e => e.links.megaplayId).length;
+          const engCount = subCount; // Since both sub and eng are derived from megaplayId in this app
           const multiCount = animeEps.filter(e => e.links.multi).length;
 
           return (

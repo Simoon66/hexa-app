@@ -1,20 +1,20 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# HexaAnime - Premium Streaming Platform
 
-# Run and deploy your AI Studio app
+A high-end, luxury-themed anime streaming application built with React and Tailwind CSS.
 
-This contains everything you need to run your app locally.
+## Features
+- **Luxury Gold Aesthetic**: Custom champagne gold theme (#ffde95) with obsidian black backgrounds.
+- **Megaplay Integration**: Optimized iframe handling for Megaplay streaming servers.
+- **AniList API**: Real-time anime metadata fetching with a focus on English titles.
+- **Admin Suite**: Full content management system (CMS) for series, seasons, and episodes.
+- **Responsive Design**: Tailored experiences for Mobile, Tablet, and Desktop.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1VeknFmbAhe91FIt41WfeZfvSnW5v-V9T
+## Tech Stack
+- React 19
+- Tailwind CSS
+- AniList GraphQL API
+- LocalStorage Persistence
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Key Logic
+- **Streaming**: Uses a hardcoded template for Megaplay IDs to ensure sub/dub compatibility.
+- **Search**: Floating live-search overlay for instant access.

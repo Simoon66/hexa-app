@@ -125,8 +125,10 @@ const App: React.FC = () => {
       
       <main className="flex-grow pb-20">
         {currentRoute === 'home' ? (
+          /* Added searchQuery prop to Home component below */
           <Home 
             state={state} 
+            searchQuery={searchQuery}
             onAnimeClick={(id) => navigateTo('anime', id)} 
             onToggleFavorite={toggleFavorite}
           />
