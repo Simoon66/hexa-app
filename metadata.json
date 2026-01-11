@@ -1,0 +1,7 @@
+{
+  "name": "HexaAnime - Premium Anime Streaming",
+  "description": "High-end anime streaming platform with MAL integration, secret admin controls, and persistent user preferences.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
